@@ -1,17 +1,17 @@
 p{
     color: rgb(226, 43, 43);
-    height: 32px; 
+    height: 32px;
 }/*لو شغال علي pragraph*/
  .my-p{
     color: blueviolet;
-    height: 12px; 
+    height: 12px;
 } /* لو شغال علي class*/
 #my-p{
     color: rgb(4, 1, 12);
-    height: 92px; 
+    height: 92px;
 } /*لو شغال علي id*/
 .div {
-    
+
 }
 .do {
     background-color: rgba(128, 119, 119, 0.26);  /* color name*/
@@ -33,16 +33,16 @@ p{
     /* border-style:solid ; */
     /* outline:style size color ; يستخدم لوضع اطار حول العنصر بس مبياخدش من مساحته*/
     /* border: 10px solid cadetblue;  يستخدم لوضع اطار حول العنصر بس مبيقلش الشغل علي الاربع جهات */
-    /* 
-     display:- يستخدم لاستدعاء عدة اوامر منها 
-     
+    /*
+     display:- يستخدم لاستدعاء عدة اوامر منها
+
     1- block => بنستخده لو هنحط كل سطر لوحده او كل عنصر في سطر لوحده
-                            بيحترم كل الاتي 
+                            بيحترم كل الاتي
     margin - padding- width - height
-    2- inline=> مش هنستدمه عشان مش محترم     
+    2- inline=> مش هنستدمه عشان مش محترم
     3- Inlin-Block => هنستخدمه لو عاوزين نحط عناصر في نفس السطر
     4- none =>  بيخفي العنصر ويظهره ولا يترك مكانه فارغ*/
-        
+
         /* visibility: hidden;  => يخفي العنصر ولكن يترك مكانه فارغ*/
 
 
@@ -52,7 +52,7 @@ p{
      margin: auto;
      background-color: blueviolet;
      background-color: rgb(138 43 226);
-     padding: 20px 
+     padding: 20px
     }
 .assign-1-shape-2{
     width: 500px;
@@ -73,52 +73,52 @@ p{
     background-color: beige;
     width: 400px;
     margin:25px ;
-    padding: 20px ; 
+    padding: 20px ;
     border:50px solid beige;
     /* position: absolute;  => بيتحرك بناء علي الصفحة او الاب اللي هو فيه   */
     /* position:fixed; => scroll بيتحرك بناءا علي الصفحة مش الاب اللي هو فيه وبيفضل ثابت حتي لو عملت */
     /* position: relative; => بيتحرك بناء علي نفسه ومبيتأثرش بباقي العناصر اللي معاه وممكن يغطي علي باقي العناصر عادي  */
     /* position: static; => مفيش حاجة بتأثر فيه وهو الوضع الديفولت  */
-    /* position: sticky; => (scroll) ممكن احطه بين كلام كتير ويحافظ علي مكانه ولما اعمل 
+    /* position: sticky; => (scroll) ممكن احطه بين كلام كتير ويحافظ علي مكانه ولما اعمل
     بيفضل  ظاهر في الصفحة */
     /* (لو عاوز احط عنصر جوا التاني بخلي  relative الاب) ( absolute  الابن ) */
     /* z-index: ; => لو عندي طبقات فوق بعضها وعاوز اتحكم ف مين فوق التاني */
-    /* flexible box 
+    /* flexible box
     for parent :-
-    display flex => to start flex box 
+    display flex => to start flex box
 
-    flex-direction: row => default value ممكن اخليه row reverse ومنه بنتحكم باتجاه العناصر ورا بعض 
+    flex-direction: row => default value ممكن اخليه row reverse ومنه بنتحكم باتجاه العناصر ورا بعض
     flex-direction: column عشان اخلي العناصر في وض عمود مش صف وممكن اعكسه reverse-column
 
-    flex-wrap: nowrap => default علشان اخلي العناصر الزيادة تتكيف جوا الفليكس بوكس 
-    wrab وممكن اخليه ميتكيفش كدة العنصر مش هيكمل في نفس الصف من خلال امر 
-    wrb-reverse وطبعا ممكن اعكس ترتيب العنصر الزياده من خلال خاصية 
+    flex-wrap: nowrap => default علشان اخلي العناصر الزيادة تتكيف جوا الفليكس بوكس
+    wrab وممكن اخليه ميتكيفش كدة العنصر مش هيكمل في نفس الصف من خلال امر
+    wrb-reverse وطبعا ممكن اعكس ترتيب العنصر الزياده من خلال خاصية
 
-    /* flex-flow: flex-direction: + flex-wrap => دي short hand للامرين اللي فوق   
+    /* flex-flow: flex-direction: + flex-wrap => دي short hand للامرين اللي فوق
     justify-content: flex-start; =>  علشان اخلي الكونتنت كله يبدا من علي الشمال اللي هي
-     بداية الصفحة ولو حاجة زادت تنزل في بداية الصفحة بردو 
-    justify-content: flex-end; => علشان اخلي الكونتنت متركز في نهاية الصفحة 
-    justify-content: space-between; => widthعلشان اعمل مسافات بين العناصر ويعضها من اللي باقي من ال 
-    justify-content: space-around; => widthعشان اعمل مسافات حواليها  من اللي باقي من 
-    /* justify-content: space-evenly ; => width علشان اعمل مسافات بين العناصر وحواليها ب اللي باقي من ال  
-    align-content:=> للتحكم في الكونتنت طوليا 
-    align-items: stretch ; => بتعمل محاذاة للعنصر طوليا وبتخليه يملي الكونتنت 
-    align-items: flex-start; => بتتحكم في ارتفاع العنصر بغض النظر عن ارتفاع الكونتنت عشان ده 
-    مش استرتش وبتخليه في بداية الصفحة 
-    align-items: flex-end ; => بتخلي العنصر في نهاية الكونتنت 
-    align-items: center ; => بتخلي العنصر في نص الكونتنت 
-   
-    for child 
-    flex-grow: ; بتتحكم في نمو العنصر 
-    flex-shrink: ; بتتحكم في انكماش العنصر 
+     بداية الصفحة ولو حاجة زادت تنزل في بداية الصفحة بردو
+    justify-content: flex-end; => علشان اخلي الكونتنت متركز في نهاية الصفحة
+    justify-content: space-between; => widthعلشان اعمل مسافات بين العناصر ويعضها من اللي باقي من ال
+    justify-content: space-around; => widthعشان اعمل مسافات حواليها  من اللي باقي من
+    /* justify-content: space-evenly ; => width علشان اعمل مسافات بين العناصر وحواليها ب اللي باقي من ال
+    align-content:=> للتحكم في الكونتنت طوليا
+    align-items: stretch ; => بتعمل محاذاة للعنصر طوليا وبتخليه يملي الكونتنت
+    align-items: flex-start; => بتتحكم في ارتفاع العنصر بغض النظر عن ارتفاع الكونتنت عشان ده
+    مش استرتش وبتخليه في بداية الصفحة
+    align-items: flex-end ; => بتخلي العنصر في نهاية الكونتنت
+    align-items: center ; => بتخلي العنصر في نص الكونتنت
+
+    for child
+    flex-grow: ; بتتحكم في نمو العنصر
+    flex-shrink: ; بتتحكم في انكماش العنصر
     order: ; اعادة ترتيب العناصر
-    flex-basis: ; rowبيتحكم في عرض العنصر في حالة ال 
-    flex-basis: ; column في طول العنصر في حالة ال 
-    align-self: ; للتحكم في align items 
+    flex-basis: ; rowبيتحكم في عرض العنصر في حالة ال
+    flex-basis: ; column في طول العنصر في حالة ال
+    align-self: ; للتحكم في align items
     بس لكل عنصر لوحده
     caret-color => تغيير لون مؤشر الكتابة
-    HTML> contenteditable=> لو عندي براجراف عاوز اعدل الكلام جواه 
-    pointer-event=> لو عاوز اغير في اعدادات السهم 
+    HTML> contenteditable=> لو عندي براجراف عاوز اعدل الكلام جواه
+    pointer-event=> لو عاوز اغير في اعدادات السهم
 
 
      grid => خاصية زي الflex
@@ -130,10 +130,10 @@ p{
     column-gap:20px
     gap:10px 15px
     justfy-content
-    allign-content    
-      
+    allign-content
+
 child=>
-grid-area=> لو عاوز اتحكم في مساحة العنصر  
-grid-colomn:1/7 => لو عاوز اخلي عنصر واحد ياخد صف كامل  
+grid-area=> لو عاوز اتحكم في مساحة العنصر
+grid-colomn:1/7 => لو عاوز اخلي عنصر واحد ياخد صف كامل
 grid-template-area=> لو مدي للاب تيمبليت بتحكم فيه من هنا
-} 
+}
