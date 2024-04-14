@@ -1,15 +1,15 @@
-# Nutritions
+# Watch your Calories
 
 ## Final Project from Harvard's Introduction to Computer Science CS50 hosted on eDX
 
 *The climax of this course is its final project. I chose to create a web-based food caculator.*
 
 
-#### [Nutritions CS50 final project Demo Video](https://youtu.be/Y2jzpcygD6Y)
+#### [Nutritions CS50 final project Demo Video](https://youtu.be/X-SQJTOwS_Y?si=BZ7Z-B2JkwfaOvSi)
 
 
 ### Description
-  >Nutritions is a web app I created that shaws all nutritions (46 items in total) from food products someone's ate.
+  >Watch your Calories is a web app I created that shaws all nutritions (46 items in total) from food products someone's ate.
 
   >Without registration, the user can see the composition of a separate product.
 
