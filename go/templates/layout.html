@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <title>Reclyce for Education</title>
+    {% block link %} {% endblock %}
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <a href="/" class="full-brand">
+          <h1 class="brand">TechRecycle</h1>
+          <span>for education</span>
+        </a>
+        <nav>
+          <ul>
+            {% if session['userId'] and session['isSchool'] == undefined and
+            session['isAdmin'] == undefined %}
+            <!-- Normal user is logged -->
+            <li><a href="/schools">Schools</a></li>
+            <li><a href="/rank">Rank</a></li>
+            <li><a href="/history">My Donations</a></li>
+            <li>
+              <a href="/password">Change Password</a>
+            </li>
+            <li><a href="/logout">Logout</a></li>
+
+            {% elif session['userId'] and session['isSchool'] and
+            session['isAdmin'] == undefined %}
+            <!-- User is logged as a school -->
+            <li><a href="/logout">Logout</a></li>
+            {% elif session['userId'] and session['isSchool'] == undefined and
+            session['isAdmin'] != undefined %}
+            <li><a href="/admin">Home</a></li>
+            <li><a href="/admin/add">Add school</a></li>
+            <li><a href="/logout">Logout</a></li>
+            {% endif %}
+          </ul>
+        </nav>
+        <h2 class="page-title">{% block pageTitle %} {% endblock %}</h2>
+      </header>
+      <main>{% block content %} {% endblock %}</main>
+    </div>
+    {% block javascript %} {% endblock %}
+  </body>
+</html>

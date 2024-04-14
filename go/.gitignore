@@ -1,0 +1,7 @@
+__pycache__/
+.vscode/
+
+static/uploads/*
+db/SQL
+*.sql
+*.sqbpro
