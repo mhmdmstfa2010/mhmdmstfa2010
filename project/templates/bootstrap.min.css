@@ -3677,7 +3677,6 @@ input[type=submit].btn-block {
 .navbar-nav {
   display:-ms-flexbox;
   display:flex;
-  background-color : #eee;
   -ms-flex-direction:column;
   flex-direction:column;
   padding-left:0;
