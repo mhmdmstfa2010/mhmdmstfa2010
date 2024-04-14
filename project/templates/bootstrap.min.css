@@ -3677,12 +3677,13 @@ input[type=submit].btn-block {
 .navbar-nav {
   display:-ms-flexbox;
   display:flex;
+  background-color : #eee;
   -ms-flex-direction:column;
   flex-direction:column;
   padding-left:0;
   margin-bottom:0;
   list-style:none
-  background-color: #eee;
+
 }
 .navbar-nav .nav-link {
   padding-right:0;
