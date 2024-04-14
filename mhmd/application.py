@@ -66,7 +66,7 @@ def after_request(response):
     response.headers["Pragma"] = "no-cache"
     return response
     # Do you know that bug in css files? this is for this, reset Cache in browser
-    
+
 @app.route("/")
 @login_required
 def index():
@@ -121,8 +121,8 @@ def login():
         if error is None:
             session.clear()
             session["user_id"] = rows[0]['id']
-            return redirect("/") 
-        
+            return redirect("/")
+
 
 @app.route("/logout")
 def logout():
@@ -142,7 +142,7 @@ def register():
         name = name.fetchall()
         if name != [] and name[0]['username'] == user:
             error = "Username already exist!"
-        
+
         em = request.form.get("email")
 
         password = request.form.get("password")
@@ -183,7 +183,7 @@ def registerDonation():
         email = db.execute("SELECT email FROM users WHERE id = :user", user=user)
         email = email.fetchall()
         email = email[0]['email']
-        
+
         if f != None:
             filename = secure_filename(f.filename)
             name = cases.select(cases.columns.filename == filename).execute()
