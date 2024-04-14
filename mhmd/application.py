@@ -5,8 +5,8 @@ from werkzeug.security import check_password_hash, generate_password_hash
 # https://flask.palletsprojects.com/en/1.1.x/patterns/sqlalchemy/
 # https://docs.sqlalchemy.org/en/13/core/connections.html?highlight=resultproxy#sqlalchemy.engine.ResultProxy
 # https://docs.sqlalchemy.org/en/13/core/tutorial.html#coretutorial-selecting
-from flask_wtf import FlaskForm
-from flask_wtf.file import FileField, FileAllowed
+from flask import FlaskForm
+from flask.file import FileField, FileAllowed
 from werkzeug.utils import secure_filename
 import os
 # https://flask-wtf.readthedocs.io/en/stable/form.html#module-flask_wtf.file
